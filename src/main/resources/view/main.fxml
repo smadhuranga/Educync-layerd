@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rooNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edusync.controller.MainController">
+   <!-- Your layout code here -->
+
+   <children>
+      <BorderPane layoutX="242.0" layoutY="146.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: #001219;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="123.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #001219;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="exit" fitHeight="26.0" fitWidth="21.0" layoutX="1277.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert.icon/5974771.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <HBox layoutX="214.0" layoutY="28.0" prefHeight="48.0" prefWidth="1068.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="28.0">
+                     <children>
+                        <JFXButton fx:id="btnDashBoard" alignment="BOTTOM_LEFT" onAction="#btnDashboardOnAction" prefHeight="48.0" prefWidth="335.0" styleClass="menuItems" stylesheets="@../assert/css/style.css" text="Dashboard                       " textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assert.icon/icons8-dashboard-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnStudent" alignment="BOTTOM_LEFT" onAction="#btnStudentOnAction" prefHeight="48.0" prefWidth="375.0" styleClass="menuItems" stylesheets="@../assert/css/style.css" text="Student                            " textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assert.icon/icons8-student.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnEmployee" alignment="BOTTOM_LEFT" onAction="#btnEmployeeOnAction" prefHeight="48.0" prefWidth="382.0" styleClass="menuItems" stylesheets="@../assert/css/style.css" text="Employee                        " textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assert.icon/icons8-permanent-job-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Label fx:id="MenuBack" layoutX="14.0" layoutY="31.0" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert.icon/icons8-menu-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="Menu" layoutX="14.0" layoutY="31.0" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert.icon/icons8-menu-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="root" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <AnchorPane prefHeight="676.0" prefWidth="1120.0">
+                     <children>
+                        <AnchorPane fx:id="slider" layoutX="-1.0" prefHeight="677.0" prefWidth="208.0" style="-fx-background-color: #001219;">
+                           <children>
+                              <JFXButton fx:id="btnStuAtten" alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="112.0" onAction="#btnStudentAttendenceOnAction" prefHeight="40.0" prefWidth="209.0" stylesheets="@../assert/css/style.css" text="Student Attendence" textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="90.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assert.icon/icons8-attendance-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btnSchedule" alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="194.0" onAction="#btnScheduleOnAction" prefHeight="40.0" prefWidth="209.0" text="Schedule        " textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="230.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="colou">
+                                       <image>
+                                          <Image url="@../assert.icon/icons8-schedule-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btnFee" alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="274.0" onAction="#btnFeeDetailsOnAction" prefHeight="40.0" prefWidth="209.0" stylesheets="@../assert/css/style.css" text="Fee Details   " textFill="WHITE" AnchorPane.topAnchor="370.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assert.icon/icons8-fee-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btnrecord" alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="362.0" onAction="#btnRecordViewOnAction" prefHeight="40.0" prefWidth="209.0" stylesheets="@../assert/css/style.css" text=" Record &amp; View Attendence" textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="510.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assert.icon/icons8-view-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btnLogout" alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="623.0" onAction="#btnLogoutOnAction" prefHeight="40.0" prefWidth="209.0" text="Log Out  " textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assert.icon/icons8-log-out-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="mainPain" layoutX="214.0" prefHeight="677.0" prefWidth="1080.0" style="-fx-background-color: white;" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

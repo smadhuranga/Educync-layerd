@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="643.0" prefWidth="1121.0" style="-fx-background-radius: 10; -fx-background-color: Black];" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edusync.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="626.0" layoutY="47.0" prefHeight="550.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+         <children>
+            <JFXTextField fx:id="txtUserId" labelFloat="true" layoutX="73.0" layoutY="317.0" onKeyReleased="#txtCusytomerIdOnKeyRelesed" prefHeight="34.0" prefWidth="250.0" promptText="Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="73.0" layoutY="380.0" prefHeight="34.0" prefWidth="250.0" promptText="Password">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXPasswordField>
+         </children></AnchorPane>
+      <ImageView fitHeight="641.0" fitWidth="616.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert.icon/1_6Jp3vJWe7VFlFHZ9WhSJng.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitHeight="266.0" fitWidth="361.0" layoutX="643.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert.icon/Screenshot%202024-03-16%20084313.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="749.0" layoutY="511.0" onAction="#btnLoginOnAction" prefHeight="50.0" prefWidth="149.0" ripplerFill="#6098d3" style="-fx-background-color: #1877F2;" text="Login" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Bloom />
+         </effect>
+         <font>
+            <Font size="21.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

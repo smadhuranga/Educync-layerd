@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="677.0" prefWidth="1270.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edusync.controller.StudentFormController">
+   <children>
+      <Label layoutX="1159.0" layoutY="135.0" prefHeight="202.0" prefWidth="12.0" text="Student" wrapText="true" AnchorPane.leftAnchor="1159.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblStudent" layoutX="14.0" layoutY="292.0" prefHeight="379.0" prefWidth="1074.0" stylesheets="@../assert/css/TableStyle.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="188.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="colGrade" prefWidth="75.0" text="Grade" />
+            <TableColumn fx:id="colAddress" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="colGname" prefWidth="75.0" text="G-Name" />
+            <TableColumn fx:id="colGaddress" prefWidth="75.0" text="G-Address" />
+            <TableColumn fx:id="colGemail" prefWidth="75.0" text="G-Email" />
+            <TableColumn fx:id="colGtel" prefWidth="75.0" text="G-Tel" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="304.0" layoutY="243.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="198.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="849.0" layoutY="14.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="597.0" layoutY="14.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="849.0" layoutY="76.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="786.0" layoutY="227.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert.icon/newdelete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="886.0" layoutY="227.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: #e67e22;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert.icon/newupdate.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="995.0" layoutY="227.0" onAction="#btnSaveOnAction" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: #1877F2;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert.icon/newsave.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="597.0" layoutY="135.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="597.0" layoutY="76.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="849.0" layoutY="135.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="239.0" fitWidth="296.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assert.icon/juicy-woman-focused-on-online-learning.gif" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitHeight="152.0" fitWidth="181.0" layoutX="1068.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1068.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assert.icon/Screenshot%202024-03-16%20084313.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtid" labelFloat="true" layoutX="304.0" layoutY="16.0" onAction="#txtSearchOnAction" onKeyReleased="#txtStudentIdOnKeyRelesed" prefHeight="32.0" prefWidth="242.0" promptText="Student Id">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtname" labelFloat="true" layoutX="304.0" layoutY="83.0" prefHeight="32.0" prefWidth="242.0" promptText="Student Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtgrade" labelFloat="true" layoutX="572.0" layoutY="18.0" prefHeight="32.0" prefWidth="242.0" promptText="Student Grade">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtaddress" labelFloat="true" layoutX="572.0" layoutY="83.0" prefHeight="32.0" prefWidth="242.0" promptText="Student Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtgaddress" labelFloat="true" layoutX="572.0" layoutY="152.0" prefHeight="32.0" prefWidth="242.0" promptText="Guardian Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtgname" labelFloat="true" layoutX="834.0" layoutY="18.0" prefHeight="32.0" prefWidth="242.0" promptText="Guardian Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtgtel" labelFloat="true" layoutX="828.0" layoutY="83.0" prefHeight="32.0" prefWidth="242.0" promptText="Guardian Tel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtgemail" labelFloat="true" layoutX="828.0" layoutY="152.0" prefHeight="32.0" prefWidth="242.0" promptText="Guardian Email">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
